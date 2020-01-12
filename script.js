@@ -1,8 +1,13 @@
 // atlanta weather
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=atlanta&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
+$.getJSON(
+    // ajax call for most elements
+"http://api.openweathermap.org/data/2.5/weather?q=atlanta&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
+// ajax call for uv index
+"api.openweathermap.org/data/2.5/uvi?lat=33.75&lon=84.39&APPID=8a33ff430c1f430013be38a1870e0dae",
+// ajax call for 5-day forecast
+// "api.openweathermap.org/data/2.5/forecast?id=4180439&APPID=8a33ff430c1f430013be38a1870e0dae",
 
 function(data){
-console.log(data);
 var location1 = data.name;
 var icon1 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 var temp1 = Math.floor(data.main.temp);
@@ -15,7 +20,7 @@ $('.location1').prepend("Location: " + location1);
 $('.icon1').attr('src', icon1); 
 $('.temp1').append(temp1 + " °F");
 $('.weather1').append("Conditions: "+ weather1);
-$('.humidity1').append("Humidity: " + humidity + " g/m3");
+$('.humidity1').append("Humidity: " + humidity1 + " g/m3");
 $('.windSpeed1').append("Wind Speed: " + windSpeed1 + " mph");
 $('.uVIndex1').append("UV Index: " + uVIndex1);
 
