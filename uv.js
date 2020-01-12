@@ -34,7 +34,7 @@ function(data){
     console.log(data);
     var uVIndex2 = data.name; 
 }
-// paris UV index
+paris UV index
 $.getJSON("api.openweathermap.org/data/2.5/uvi?lat=48.85&lon=2.35&APPID=8a33ff430c1f430013be38a1870e0dae",
 function(data){
     console.log(data);
