@@ -2,15 +2,15 @@ $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=atlanta&units=imperi
 
 function(data){
 console.log(data);
-var location = data.name;
-var icon = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
-var temp = Math.floor(data.main.temp);
-var weather = data.weather[0].main;
+var location1 = data.name;
+var icon1 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+var temp1 = Math.floor(data.main.temp);
+var weather1 = data.weather[0].main;
 
-$('.location').prepend("Location: " + location);
-$('.icon').attr('src', icon); 
-$('.temp').append(temp + " °F");
-$('.weather').append(weather);
+$('.location1').prepend("Location: " + location1);
+$('.icon1').attr('src', icon1); 
+$('.temp1').append(temp1 + " °F");
+$('.weather1').append(weather1);
 
 
 
@@ -71,11 +71,11 @@ $('.weather4').append(weather4);
 });
 
 
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Boston&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
+$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Baltimore&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
 
 function(data){
 console.log(data);
-var location4 = data.name;
+var location5 = data.name;
 var icon5 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 var temp5 = Math.floor(data.main.temp);
 var weather5 = data.weather[0].main;
@@ -89,7 +89,7 @@ $('.weather5').append(weather5);
 
 });
 
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Baltimore&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
+$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=London&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
 
 function(data){
 console.log(data);
@@ -107,7 +107,7 @@ $('.weather6').append(weather6);
 
 });
 
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=London&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
+$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Paris&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
 
 function(data){
 console.log(data);
@@ -121,42 +121,61 @@ $('.icon7').attr('src', icon7);
 $('.temp7').append(temp7 + " °F");
 $('.weather7').append(weather7);
 
-
-
 });
 
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Paris&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
+// // Atlanta 5-day AJAX call
+// $.getJSON("api.openweathermap.org/data/2.5/forecast?id=4180439&APPID=8a33ff430c1f430013be38a1870e0dae",
 
-function(data){
-console.log(data);
-var location8 = data.name;
-var icon8 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
-var temp8 = Math.floor(data.main.temp);
-var weather8 = data.weather[0].main;
+// function(data){
+// console.log(data);
+// var fiveDay1 = data.name; 
 
-$('.location8').prepend("Location: " + location8);
-$('.icon8').attr('src', icon8); 
-$('.temp8').append(temp8 + " °F");
-$('.weather8').append(weather8);
+// }
 
 
+// Anchorage 5 day
+// $.getJSON("api.openweathermap.org/data/2.5/forecast?id=5879400&APPID=8a33ff430c1f430013be38a1870e0dae",
 
-});
+// // function(data){
+// // console.log(data);
+// // var fiveDay2 = data.name; 
 
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=New+York&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
+// Perth 5 day
 
-function(data){
-console.log(data);
-var location9 = data.name;
-var icon9 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
-var temp9 = Math.floor(data.main.temp);
-var weather9 = data.weather[0].main;
+// $.getJSON("api.openweathermap.org/data/2.5/forecast?id=2063523&APPID=8a33ff430c1f430013be38a1870e0dae",
 
-$('.location9').prepend("Location: " + location9);
-$('.icon9').attr('src', icon9); 
-$('.temp9').append(temp9 + " °F");
-$('.weather9').append(weather9);
+// // function(data){
+// // console.log(data);
+// // var fiveDay3 = data.name; 
 
+// New Hope 5 day
 
+// $.getJSON("api.openweathermap.org/data/2.5/forecast?id=5203197&APPID=8a33ff430c1f430013be38a1870e0dae",
 
-});
+// // function(data){
+// // console.log(data);
+// // var fiveDay4 = data.name; 
+
+// baltimore 5 day
+
+// $.getJSON("api.openweathermap.org/data/2.5/forecast?id=4347778&APPID=8a33ff430c1f430013be38a1870e0dae",
+
+// // function(data){
+// // console.log(data);
+// // var fiveDay5 = data.name; 
+
+// london 5 day
+
+// $.getJSON("api.openweathermap.org/data/2.5/forecast?id=2643743&APPID=8a33ff430c1f430013be38a1870e0dae",
+
+// // function(data){
+// // console.log(data);
+// // var fiveDay6 = data.name; 
+
+// paris 5 day
+
+// $.getJSON("api.openweathermap.org/data/2.5/forecast?id=2988507&APPID=8a33ff430c1f430013be38a1870e0dae",
+
+// // function(data){
+// // console.log(data);
+// // var fiveDay7 = data.name; 

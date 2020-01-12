@@ -1,5 +1,21 @@
-/* css */
-#drrock {
-background-color: blue;
+.outer {
+background-color: rgb(14, 250, 112);
 
+}
+
+.inner {
+background-color: rgb(162, 202, 224);
+
+}
+
+.card-header {
+    background-color: rgb(65, 64, 63);
+}
+.card-footer {
+    background-color: rgb(65, 64, 63);
+}
+
+.featured {
+    background-color: rgb(24, 253, 4);
+    text-align: center;
 }
