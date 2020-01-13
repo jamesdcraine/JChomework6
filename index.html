@@ -11,195 +11,69 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!-- added my own internal stylesheet   -->
      <link rel= "stylesheet" href="style.css">
+     <script src="moment.js"></script>
     </head>
  <body>
 
-  <!-- Anchorage weather top left -->
-  <div class="card-deck">
-  <div class="card">
-    <div class="card-header">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-    <div class="outer">
-           <div class="card-body">
-           <h5 class="card-title">Anchorage, Alaska</h5>
-      <div class="weather-container2">
-        <img class="icon2">
-        <p class="location2"></p>
-        <p class="weather2"></p>
-        <p class="temp2"></p>
-        <p class="humidity2"></p>
-        <p class="windSpeed2"></p>
-        <p class="uVIndex2"></p>
-  
-      <p class="card-text">Click <a href="anchorage.html">HERE</a> to see your 5-day forecast</p>
-    </div>
-  </div>
-  </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
+  <div class="headliner"><h1>Weather Dashboard</h1>
+
   </div>
 
- <!-- Perth weather top middle -->
+<!-- Added city search bar -->
+  <div class="row">
+    <div class="col-sm-4 searchArea">
+        <h2>Search for a City:</h2>
+        <span id="error"></span>
+            <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" id="city" placeholder="Search"
+                aria-label="Search">
+            <button type="button" id="submitCity" class="btn btn-primary" type="submit">Search</button>
+        </form>          
+     
+          <!-- Atlanta Weather featured -->
 
-  <div class="card">
-    <div class="card-header">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-    <div class="inner">
-    <div class="card-body">
-      <h5 class="card-title">Perth, Australia</h5>
-      <div class="weather-container3">
-        <img class="icon3">
-        <p class="location3"></p>
-        <p class="weather3"></p>
-        <p class="temp3"></p>
-        <p class="humidity3"></p>
-        <p class="windSpeed3"></p>
-        <p class="uVIndex3"></p>
-    </div>
-      <p class="card-text">Click <a href="perth.html">HERE</a> to see your 5-day forecast.</p>
-    </div>
-  </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
+            <div class="featured1">
+            <div class="featured2">
+              <h3><p class="location1"><a>,</a>
+                <span id="datetime"></span><script>var dt = new Date();
+                  document.getElementById("datetime").innerHTML=dt.toLocaleString();
+                  </script>
+              <img class="icon1"></p></h3>
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                    <div class="weather-container1">
+                      <p class="temp1"></p>
+                      <p class="humidity1"></p>
+                      <p class="windSpeed1"></p>
+                      <p class="uVIndex1"></p>
+                      <a href="https://www.accuweather.com/en/us/georgia/weather-radar" class="btn btn-primary"><strong>LIVE DOPPLER</a></strong>
+              </div></div>
+              <div class="card-footer text-muted">
+                Updated about 1 minute ago...
+              </div>
+            </div>
+            </div> 
+ 
+<!-- city list  -->
+            <div class="city-list"> 
+            <div>
+        <div class="cities">Atlanta, GA<br></div>
+        <div class="cities">Anchorage, AK<br></div>
+          <div class="cities">Perth, Australia<br></div>
+          <div class="cities">New Hope, PA<br></div>
+          <div class="cities">Baltimore, MD<br></div class="cities">
+          <div class="cities">London, UK<br></div>
+          <div class="cities">Paris, France<br></div class="cities">
+         </div>            
+    </div> 
 
-<!-- new hope weather -->
-  <div class="card">
-    <div class="card-header">
-      <small class="text-muted">Last updated 3 mins ago</small>
+    <div class="forecast"><b><h2>YOUR 5-Day Forecast</b></h2>
+<div class="forecast1"></div>
+<div class="forecast2"></div>
+<div class="forecast3"></div>
+<div class="forecast4"></div>
+<div class="forecast5"></div>
     </div>
-    <div class="outer">
-    <div class="card-body">
-      <h5 class="card-title">New Hope, Pennslyvania</h5>
-      <div class="weather-container4">
-        <img class="icon4">
-        <p class="location4"></p>
-        <p class="weather4"></p>
-        <p class="temp4"></p>
-        <p class="humidity4"></p>
-        <p class="windSpeed4"></p>
-        <p class="uVIndex4"></p>
-    </div>
-      <p class="card-text">Click <a href="newhope.html">HERE</a> to see your 5-day forecast</p>
-    </div>
-  </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-</div>
-</div>
-<br>
-<!-- Atlanta Weather featured -->
-<div class="featured">
-<div class="card-header">
-  2 days ago
-</div>
-<div class="card text-center">
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Atlanta, GA</h5>
-        <div class="weather-container1">
-          <img class="icon1">
-          <p class="location1"></p>
-          <p class="weather1"></p>
-          <p class="temp1"></p>
-          <p class="humidity1"></p>
-          <p class="windSpeed1"></p>
-          <p class="uVIndex1"></p>
-      <p class="card-text">Click below to see your 5-day forecast</p>
-    <a href="atlanta.html" class="btn btn-primary">5-Day Forecast</a>
-  </div></div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
-</div>
-<br>
-
-  <!-- Baltimore weather top left -->
-  <div class="card-deck">
-    <div class="card">
-      <div class="card-header">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-      <div class="outer">
-             <div class="card-body">
-             <h5 class="card-title">Baltimore, Maryland</h5>
-        <div class="weather-container2">
-          <img class="icon5">
-          <p class="location5"></p>
-          <p class="weather5"></p>
-          <p class="temp5"></p>
-          <p class="humidity5"></p>
-          <p class="windSpeed5"></p>
-          <p class="uVIndex5"></p>
-    
-        <p class="card-text">Click <a href="baltimore.html">HERE</a> to see your 5-day forecast</p>
-      </div>
-    </div>
-    </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  
-   <!-- London weather top middle -->
-  
-    <div class="card">
-      <div class="card-header">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-      <div class="inner">
-      <div class="card-body">
-        <h5 class="card-title">London, England</h5>
-        <div class="weather-container6">
-          <img class="icon6">
-          <p class="location6"></p>
-          <p class="weather6"></p>
-          <p class="temp6"></p>
-          <p class="humidity6"></p>
-          <p class="windSpeed6"></p>
-          <p class="uVIndex6"></p>
-      </div>
-        <p class="card-text">Click <a href="london.html">HERE</a> to see your 5-day forecast.</p>
-      </div>
-    </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  
-    <!-- Paris -->
-
-    <div class="card">
-      <div class="card-header">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-      <div class="outer">
-      <div class="card-body">
-        <h5 class="card-title">Paris, France</h5>
-        <div class="weather-container7">
-          <img class="icon7">
-          <p class="location7"></p>
-          <p class="weather7"></p>
-          <p class="temp7"></p>
-          <p class="humidity7"></p>
-          <p class="windSpeed7"></p>
-          <p class="uVIndex7"></p>
-      </div>
-        <p class="card-text">Click <a href="paris.html">HERE</a> to see your 5-day forecast</p>
-      </div>
-    </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-  </div>
 
   <script src="script.js">
   <script src="5day.js">
