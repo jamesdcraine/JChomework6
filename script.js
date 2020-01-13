@@ -37,7 +37,7 @@ var humidity2 = data.main.humidity;
 var windSpeed2 = data.wind.speed;
 var uVIndex2 = data.value;
 
-$('.location2').prepend("Location: " + location2);
+$('.location2').prepend(location2);
 $('.icon2').attr('src', icon2); 
 $('.temp2').append("Temperature: " + temp2 + " °F");
 $('.humidity2').append("Humidity: " + humidity2 + " g/m3");
@@ -57,7 +57,7 @@ var humidity3 = data.main.humidity;
 var windSpeed3 = data.wind.speed;
 var uVIndex3 = data.value;
 
-$('.location3').prepend("Location: " + location3);
+$('.location3').prepend(location3);
 $('.icon3').attr('src', icon3); 
 $('.temp3').append("Temperature: " + temp3 + " °F");
 $('.humidity3').append("Humidity: " + humidity3 + " g/m3");
@@ -77,7 +77,7 @@ var humidity4 = data.main.humidity;
 var windSpeed4 = data.wind.speed;
 var uVIndex4 = data.value;
 
-$('.location4').prepend("Location: " + location4);
+$('.location4').prepend(location4);
 $('.icon4').attr('src', icon4); 
 $('.temp4').append("Temperature: " + temp4 + " °F");
 $('.humidity4').append("Humidity: " + humidity4 + " g/m3");
@@ -97,7 +97,7 @@ var humidity5 = data.main.humidity;
 var windSpeed5 = data.wind.speed;
 var uVIndex5 = data.value;
 
-$('.location5').prepend("Location: " + location5);
+$('.location5').prepend(location5);
 $('.icon5').attr('src', icon5); 
 $('.temp5').append("Temperature: " + temp5 + " °F");
 $('.humidity5').append("Humidity: " + humidity5 + " g/m3");
@@ -117,7 +117,7 @@ var humidity6 = data.main.humidity;
 var windSpeed6 = data.wind.speed;
 var uVIndex6 = data.value;
 
-$('.location6').prepend("Location: " + location6);
+$('.location6').prepend(location6);
 $('.icon6').attr('src', icon6); 
 $('.temp6').append("Temperature: " + temp6 + " °F");
 $('.humidity6').append("Humidity: " + humidity6 + " g/m3");
@@ -137,10 +137,7 @@ var humidity7 = data.main.humidity;
 var windSpeed7 = data.wind.speed;
 var uVIndex7 = data.value;
 
-// Moment.js Date
-var moment = require('moment');
-
-$('.location7').prepend("Location: " + location7);
+$('.location7').prepend(location7);
 $('.icon7').attr('src', icon7); 
 $('.temp7').append("Temperature: " + temp7 + " °F");
 $('.humidity7').append("Humidity: " + humidity7 + " g/m3");
