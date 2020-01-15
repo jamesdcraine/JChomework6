@@ -1,60 +1,62 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Weather Dashboard</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
 <!-- added jquery -->
-     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <!-- added bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
 <!-- added my own internal stylesheet   -->
-     <link rel= "stylesheet" href="assets/style.css">
-    </head>
- <body>
+<link rel= "stylesheet" href="../style.css">
+   </head>
+<body>
 
-  <div class="headliner"><h1>Weather Dashboard</h1>
+ <div class="headliner"><h1>Weather Dashboard</h1>
 
-  </div>
+ </div>
 
 <!-- Added city search bar -->
 <div class="row">
   <div class="col-sm-4 searchArea">
       <h2>Search for a City:</h2>      
-    <form action="http://www.google.com" class="form-inline" method="get" name="searchform" target="_blank">
-    <input type="hidden" value="www.google.com">
+    <form action="http://www.google.com/search" class="form-inline" method="get" name="searchform" target="_blank">
+    <input name="weather" type="hidden" value="www.google.com">
     <input autocomplete="on" class="form-control mr-sm-2" name="q" placeholder="Search" required="required" type="text" aria-label="Search">      
     <button class="btn btn-primary" type="submit">Search</button>
-    </form> 
+    </form>     
      
           <!-- Atlanta Weather featured -->
+
             <div class="featured1">
-            <div class="featured2"> 
-             <h3><p class="location1"><a>,</a>
-               <span id="datetime"></span><script>var dt = new Date();
-                  document.getElementById("datetime").innerHTML=dt.toLocaleString(); 
+            <div class="featured2">
+              <h3><p class="location6"><a>,</a>
+                <span id="datetime"></span><script>var dt = new Date();
+                  document.getElementById("datetime").innerHTML=dt.toLocaleString();
                   </script>
-              <img class="icon1"></h3>
+              <img class="icon1"></p></h3>
               <div class="card-body">
                 <h5 class="card-title"></h5>
                     <div class="weather-container1">
-                      <p class="temp1"></p>
-                      <p class="humidity1"></p>
-                      <p class="windSpeed1"></p>
-                      <p class="uVIndex1"></p>
-                      <a href="https://www.accuweather.com/en/us/georgia/weather-radar" class="btn btn-primary"><strong>LIVE DOPPLER</strong></a>
+                      <p class="temp6"></p>
+                      <p class="humidity6"></p>
+                      <p class="windSpeed6"></p>
+                      <p class="uVIndex6"></p>
+                      <a href="https://www.accuweather.com/en/gb/london/ec4a-2/weather-radar/328328" class="btn btn-primary"><strong>LIVE DOPPLER</strong></a>
               </div></div>
               <div class="card-footer text-muted">
                 Updated about 1 minute ago...
               </div>
             </div>
-            </div>
+            </div> 
  
 <!-- city list  -->
 <div class="city-list"> 
   <div>
-<div class="cities"><a href="index.html">Atlanta, GA</a><br></div>
+<div class="cities"><a href="/index.html">Atlanta, GA</a><br></div>
 <div class="cities"><a href="/assets/cities/anchorage.html">Anchorage, AK</a><br></div>
 <div class="cities"><a href="/assets/cities/perth.html">Perth, Australia</a><br></div>
 <div class="cities"><a href="/assets/cities/newhope.html">New Hope, PA</a><br></div>
@@ -63,6 +65,8 @@
 <div class="cities"><a href="/assets/cities/paris.html">Paris, France</a><br></div>
 </div>            
 </div> 
+
+<!-- Five day forecast -->
 
 <!-- Five day forecast -->
 
@@ -100,11 +104,9 @@
     <img class="icon5">
     <p class="windSpeed5"></p>
     <p class="humidity5"></p>
-  </div>
-  </div></div></div>
+  </div></div></div></div>
 
-  <script src="/assets/script.js">
+  <script src="../../assets/script.js"></script>
   </script>
 </body>
 </html>
-

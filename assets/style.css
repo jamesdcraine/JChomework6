@@ -1,5 +1,4 @@
 .featured1 {
-padding: 9px 0 0 0px; 
 width: 500px;
 
 }
@@ -12,17 +11,19 @@ width: 500px;
     text-align: left;
     width: 1199px;
     height: 407px;      
-    border-radius: 10px;
+    border-radius: 0px 11px 0px 11px;
     border: solid 1px black;
+    padding: 0px 0 0 0;
 }
 
 .headliner{
     color: whitesmoke;
+    padding: 0px 0 0 0;
     text-align: center;
     background-color: rgb(65, 64, 63);
     height: 60px;
+    font-size: 30px;
 }
-
 
 .city-list {
     padding: 0px 0 0 0px;
@@ -35,9 +36,11 @@ width: 500px;
     left: 0px;
     border: black solid 1px;
     padding: 18px 0 0 10px;
+    border-radius: 0 11px 0 11px;
     height: 75px;
-    font-size: 21px;
+    font-size: 22px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
 }
 
 h3 {
@@ -52,37 +55,38 @@ h3 {
 }
  .row {
      padding: 0 0 0 10px;
- }
+ }  
 
  body {
  background-color: rgb(240, 243, 247);    
  }
 
- .uVIndex1, .uVIndex2, .uVIndex3, .uVIndex4, .uVIndex5, .uVIndex6, .uVIndex7   {
-     background-color: red;
- }
+
 
  .forecast {
      position: absolute;
      height: 100px
      width: 300px;
      top: 450px;
-     right: -169px;}
+     right: -169px;
+    }
 
 .forecast1{
 position: absolute;
 width: 175px;
 height: 175px;
 background-color: powderblue;
+border-radius: 0px 11px 0px 11px;
 left: 20px;
 border: solid 1px black;
  }
 
  .forecast2{
-    position: absolute;
+position: absolute;
 width: 175px;
 height: 175px;
 background-color: powderblue;
+border-radius: 0px 11px 0px 11px;
 right: -120px;
 border: solid 1px black;
     
@@ -93,6 +97,7 @@ border: solid 1px black;
     width: 175px;
     height: 175px;
     background-color: powderblue;
+    border-radius: 0px 11px 0px 11px;
     right: -365px;
     border: solid 1px black;
  }
@@ -102,6 +107,7 @@ border: solid 1px black;
     width: 175px;
     height: 175px;
     background-color: powderblue;
+    border-radius: 0px 11px 0px 11px;
     right: -610px;
     border: solid 1px black;
  }
@@ -111,6 +117,11 @@ border: solid 1px black;
     width: 175px;
     height: 175px;
     background-color: powderblue;
+    border-radius: 0px 11px 0px 11px;
     right: -855px;
     border: solid 1px black;
+ }
+
+ .uVIndex1, .uVIndex2, .uVIndex3, .uVIndex4, .uVIndex5, .uVIndex6, .uVIndex7 {
+     background-color: red;
  }

@@ -1,12 +1,7 @@
 $.getJSON(
 "http://api.openweathermap.org/data/2.5/weather?q=atlanta&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
 
-
-// ajax call for 5-day forecast
-// "api.openweathermap.org/data/2.5/forecast?id=4180439&units=imperial&APPID=8a33ff430c1f430013be38a1870e0dae",
-
 function(data){
-console.log(data);
 var location1 = data.name;
 var icon1 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 var temp1 = Math.floor(data.main.temp);
@@ -25,7 +20,6 @@ $('.windSpeed1').append("Wind Speed: " + windSpeed1 + " MPH");
 $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=anchorage&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae",
 
 function(data){
-console.log(data);
 var location2 = data.name;
 var icon2 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 var temp2 = Math.floor(data.main.temp);
@@ -43,7 +37,6 @@ $('.windSpeed2').append("Wind Speed: " + windSpeed2 + " MPH");
 $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=perth&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae", 
 
 function(data){
-console.log(data);
 var location3 = data.name;
 var icon3 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 var temp3 = Math.floor(data.main.temp);
@@ -61,7 +54,6 @@ $('.windSpeed3').append("Wind Speed: " + windSpeed3 + " MPH");
 $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=New+Hope&PA&units=imperial&appid=8a33ff430c1f430013be38a1870e0dae",
 
 function(data){
-console.log(data);
 var location4 = data.name;
 var icon4 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 var temp4 = Math.floor(data.main.temp);
@@ -80,7 +72,6 @@ $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Baltimore&units=impe
 
 
 function(data){
-console.log(data);
 var location5 = data.name;
 var icon5 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 var temp5 = Math.floor(data.main.temp);
@@ -99,7 +90,6 @@ $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=London&units=imperia
 
 
 function(data){
-console.log(data);
 var location6 = data.name;
 var icon6 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 var temp6 = Math.floor(data.main.temp);
@@ -118,7 +108,6 @@ $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Paris&units=imperial
 
 
 function(data){
-console.log(data);
 var location7 = data.name;
 var icon7 = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 var temp7 = Math.floor(data.main.temp);
@@ -137,7 +126,6 @@ $('.windSpeed7').append("Wind Speed: " + windSpeed7 + " MPH");
 $.getJSON("http://api.openweathermap.org/data/2.5/uvi?lat=33.75&lon=84.39&APPID=8a33ff430c1f430013be38a1870e0dae",
 function(data){
 var uVIndex1 = data.value;
-console.log(uVIndex1, "uVIndex1");
 $('.uVIndex1').append("UV Index: " + uVIndex1);
 });
 
@@ -145,50 +133,44 @@ $('.uVIndex1').append("UV Index: " + uVIndex1);
 $.getJSON("http://api.openweathermap.org/data/2.5/uvi?lat=61.21&lon=-122.37&APPID=8a33ff430c1f430013be38a1870e0dae", 
 function(data){
 var uVIndex2 = data.value;
-console.log(uVIndex2, "uVIndex2");
 $('.uVIndex2').append("UV Index: " + uVIndex2);
 });
 // Perth
 $.getJSON("http://api.openweathermap.org/data/2.5/uvi?lat=31.95&lon=115.86&APPID=8a33ff430c1f430013be38a1870e0dae",
 function(data){
 var uVIndex3 = data.value;
-console.log(uVIndex3, "uVIndex3");
 $('.uVIndex3').append("UV Index: " + uVIndex3);
 });
 // New Hope
 $.getJSON( "http://api.openweathermap.org/data/2.5/uvi?lat=40.36&lon=74.95&APPID=8a33ff430c1f430013be38a1870e0dae",
 function(data){
 var uVIndex4 = data.value;
-console.log(uVIndex4, "uVIndex4");
 $('.uVIndex4').append("UV Index: " + uVIndex4);
 });
 // Baltimore
 $.getJSON("http://api.openweathermap.org/data/2.5/uvi?lat=39.29&lon=76.61&APPID=8a33ff430c1f430013be38a1870e0dae",
 function(data){
 var uVIndex5 = data.value;
-console.log(uVIndex5, "uVIndex5");
 $('.uVIndex5').append("UV Index: " + uVIndex5);
 });
 // London
 $.getJSON("http://api.openweathermap.org/data/2.5/uvi?lat=51.51&lon=0.13&APPID=8a33ff430c1f430013be38a1870e0dae",
 function(data){
 var uVIndex6 = data.value;
-console.log(uVIndex6, "uVIndex6");
 $('.uVIndex6').append("UV Index: " + uVIndex6);
 });
 // Paris
 $.getJSON("http://api.openweathermap.org/data/2.5/uvi?lat=48.85&lon=2.35&APPID=8a33ff430c1f430013be38a1870e0dae",
 function(data){
 var uVIndex7 = data.value;
-console.log(uVIndex7, "uVIndex7");
 $('.uVIndex7').append("UV Index: " + uVIndex7);
 });
 
-// five day
-$.getJSON("api.openweathermap.org/data/2.5/forecast?id=4180439&units=imperial&APPID=8a33ff430c1f430013be38a1870e0dae",
-function(data){
-var fiveDayTemp1 = main.temp;
-console.log(fiveDayTemp1, "fiveDayTemp1");
-$('.fiveDayTemp1').append("Temp: " + fiveDayTemp1);
+// // five day
+// $.getJSON("api.openweathermap.org/data/2.5/forecast?id=4180439&units=imperial&APPID=8a33ff430c1f430013be38a1870e0dae",
+// function(data){
+// var fiveDayTemp1 = main.temp;
+// console.log(fiveDayTemp1, "fiveDayTemp1");
+// $('.fiveDayTemp1').append("Temp: " + fiveDayTemp1);
 
-})
+// })
