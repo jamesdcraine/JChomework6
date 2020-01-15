@@ -65,4 +65,4 @@ Use localStorage to store any persistent data.
 -Application loads last searched city forecast on page load.
 
 screenshot of deplayed app: 
-<img src="../assets/screenshot.jpg">
+<img src="assets/screenshot.jpg">
