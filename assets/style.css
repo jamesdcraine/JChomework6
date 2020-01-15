@@ -1,27 +1,26 @@
 .featured1 {
-width: 300px;
+width: auto;
 
 }
 
 .featured2 {
     background-color: white;
     position: absolute;
-    top: 30px;
-    right: -799px;
+    top: 5px;
+    right: -845px;
     text-align: left;
-    width: 900px;
-    height: 407px;      
+    width: 960px;
+    height: 401px;      
     border-radius: 0px 22px 0px 22px;
     border: solid 1px black;
-    padding: 0px 0 0 0;
 }
 
 .headliner{
     color: whitesmoke;
-    padding: 5px 0 0 0;
+    padding: 1px 0 0 0;
     text-align: center;
     background-color: rgb(65, 64, 63);
-    height: 60px;
+    height: 45px;
     font-size: 30px;
 }
 
@@ -38,7 +37,7 @@ width: 300px;
     padding: 18px 0 0 10px;
     border-radius: 0 22px 0 22px;
     height: 69px;
-    font-size: 22px;
+    font-size: 26px;
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
     background-color: white;
@@ -70,12 +69,13 @@ h3 {
 
 
  .forecast {
-     position: absolute;
-     height: 100px
-     width: 300px;
-     top: 450px;
-     right: -211px;
-    }
+    position: absolute;
+    height: 100px
+    width: 300px;
+    top: 410px;
+    right: -211px;
+        
+      }
 
 .forecast1{
 position: absolute;
@@ -83,9 +83,9 @@ width: 175px;
 height: 175px;
 background-color: powderblue;
 border-radius: 0px 22px 0px 22px;
-left: 0px;
+left: -75px;
 border: solid 1px black;
-padding: 2px 0 0 8px;
+padding: 2px 0 0px 8px;
  }
 
  .forecast2{
@@ -96,7 +96,7 @@ background-color: powderblue;
 border-radius: 0px 22px 0px 22px;
 right: -60px;
 border: solid 1px black;
-padding: 2px 0 0 8px;    
+padding: 2px 0 0px 8px;    
  }
 
  .forecast3{
@@ -107,7 +107,7 @@ padding: 2px 0 0 8px;
     border-radius: 0px 22px 0px 22px;
     right: -245px;
     border: solid 1px black;
-    padding: 2px 0 0 8px;
+    padding: 2px 0 0px 8px;
  }
 
  .forecast4{
@@ -118,7 +118,7 @@ padding: 2px 0 0 8px;
     border-radius: 0px 22px 0px 22px;
     right: -430px;
     border: solid 1px black;
-    padding: 2px 0 0 8px;
+    padding: 2px 0 0px 8px;
  }
 
  .forecast5{
@@ -129,7 +129,7 @@ padding: 2px 0 0 8px;
     border-radius: 0px 22px 0px 22px;
     right: -615px;
     border: solid 1px black;
-    padding: 2px 0 0 8px;
+    padding: 2px 0 0px 8px;
  }
 
  .uVIndex1, .uVIndex2, .uVIndex3, .uVIndex4, .uVIndex5, .uVIndex6, .uVIndex7 {
