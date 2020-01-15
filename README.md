@@ -19,12 +19,19 @@ How do you deliver this? Here are some guidelines:
 
 
 Display the following under current weather conditions:
+
 -City
+
 -Date
+
 -Icon image (visual representation of weather conditions)
+
 -Temperature
+
 -Humidity
+
 -Wind speed
+
 -UV index
 
 Include a search history so that users can access their past search terms. Clicking on the city name should perform a new search that returns current and future conditions for that city.
@@ -32,15 +39,22 @@ Include a search history so that users can access their past search terms. Click
 Include a 5-Day Forecast below the current weather conditions. Each day for the 5-Day Forecast should display the following:
 
 Date
+
 Icon image (visual representation of weather conditions)
+
 Temperature
+
 Humidity
 
 <b>Hints</b>
 Create multiple functions within your application to handle the different parts of the dashboard:
+
 Current conditions
+
 5-Day Forecast
+
 Search history
+
 UV index
 
 You will need to make more than one AJAX call.
@@ -52,17 +66,29 @@ Use localStorage to store any persistent data.
 
 <b>Minimum Requirements</b>
 -Functional, deployed application.
+
 -GitHub repository with a unique name and a README describing the project.
+
 -User can search for weather reports by city using the openweathermap API.
+
 -After searching for a city, the following information is displayed:
+
 -Current temperature
+
 -Current humidity
+
 -Windspeed
+
 -Uv index
+
 -5 day forecast
+
 -Application uses icons to represent weather conditions.
+
 -Application stores previously searched for cities in localstorage and displays them to the user.
+
 -Application loads last searched city forecast on page load.
 
-screenshot of deplayed app: 
+screenshot of deployed app: 
+
 <img src="assets/screenshot.jpg">
