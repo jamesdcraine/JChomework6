@@ -11,14 +11,14 @@ width: 300px;
     text-align: left;
     width: 900px;
     height: 407px;      
-    border-radius: 0px 11px 0px 11px;
+    border-radius: 0px 22px 0px 22px;
     border: solid 1px black;
     padding: 0px 0 0 0;
 }
 
 .headliner{
     color: whitesmoke;
-    padding: 0px 0 0 0;
+    padding: 5px 0 0 0;
     text-align: center;
     background-color: rgb(65, 64, 63);
     height: 60px;
@@ -28,7 +28,7 @@ width: 300px;
 .city-list {
     padding: 4px 0 0 0px;
     background-color: lightsalmon;
-    width: 222px;
+    width: 318px;
  
 }
 
@@ -36,15 +36,21 @@ width: 300px;
     left: 0px;
     border: black solid 1px;
     padding: 18px 0 0 10px;
-    border-radius: 0 11px 0 11px;
+    border-radius: 0 22px 0 22px;
     height: 69px;
     font-size: 22px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
     background-color: white;
 }
 
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 h3 {
-    font-size: 34px;
+    font-size: 44px;
+    font-family: 'IM Fell Great Primer SC', serif;
     font-weight: bolder;
     font-variant: small-caps;
 }
@@ -76,9 +82,10 @@ position: absolute;
 width: 175px;
 height: 175px;
 background-color: powderblue;
-border-radius: 0px 11px 0px 11px;
+border-radius: 0px 22px 0px 22px;
 left: 0px;
 border: solid 1px black;
+padding: 2px 0 0 8px;
  }
 
  .forecast2{
@@ -86,10 +93,10 @@ position: absolute;
 width: 175px;
 height: 175px;
 background-color: powderblue;
-border-radius: 0px 11px 0px 11px;
+border-radius: 0px 22px 0px 22px;
 right: -60px;
 border: solid 1px black;
-    
+padding: 2px 0 0 8px;    
  }
 
  .forecast3{
@@ -97,9 +104,10 @@ border: solid 1px black;
     width: 175px;
     height: 175px;
     background-color: powderblue;
-    border-radius: 0px 11px 0px 11px;
+    border-radius: 0px 22px 0px 22px;
     right: -245px;
     border: solid 1px black;
+    padding: 2px 0 0 8px;
  }
 
  .forecast4{
@@ -107,9 +115,10 @@ border: solid 1px black;
     width: 175px;
     height: 175px;
     background-color: powderblue;
-    border-radius: 0px 11px 0px 11px;
+    border-radius: 0px 22px 0px 22px;
     right: -430px;
     border: solid 1px black;
+    padding: 2px 0 0 8px;
  }
 
  .forecast5{
@@ -117,9 +126,10 @@ border: solid 1px black;
     width: 175px;
     height: 175px;
     background-color: powderblue;
-    border-radius: 0px 11px 0px 11px;
+    border-radius: 0px 22px 0px 22px;
     right: -615px;
     border: solid 1px black;
+    padding: 2px 0 0 8px;
  }
 
  .uVIndex1, .uVIndex2, .uVIndex3, .uVIndex4, .uVIndex5, .uVIndex6, .uVIndex7 {
