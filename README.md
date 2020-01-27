@@ -1,4 +1,4 @@
-https://jamesdcraine.github.io/JChomework6/
+https://jamesdcraine.github.io/weatherconsole
 
 Unit 06 - Server-Side APIs 
 
